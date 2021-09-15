@@ -1,0 +1,13 @@
+yes= True
+words=str
+def my_list(x):
+    return x[::-1]
+
+while yes:
+     sentence=my_list(input("Enter sentence here:"))
+     words = sentence.split()
+     if len(words) >=5:
+         print(words)
+     elif len(words) < 5 :
+        print("You need more words! Minimum of 5 words only!!")
+        yes
